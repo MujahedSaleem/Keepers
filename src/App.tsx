@@ -81,7 +81,7 @@ function App() {
       <section>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6" style={{ background: "white" }}>
+            <div className="col-md-6" style={{ background: "red" }}>
               <img src={Group3} className="MainImageCustm" />
             </div>
             <div className="col-md-5 paddingMainText">
@@ -192,7 +192,7 @@ function App() {
         <div className="container">
           <div
             className="centerRow row spaceImage"
-            style={{ background: "white" }}
+            style={{ background: "red" }}
           >
             <div className="col-auto col-lg-2 col-md-3 col-sm-4 spaceImage">
               <img src={iPhone123} />

@@ -2,7 +2,7 @@
   "name": "keepers",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mujahedsaleem.github.io/Keepers/",
+  "homepage": "https://mujahedsaleem.github.io/Keepers.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,7 +16,7 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.2",
+    "react-scripts": "^4.0.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
