@@ -2,14 +2,14 @@ import React from "react";
 import "./App.css";
 import white from "./assets/white.svg";
 import Vodafone from "./assets/Vodafone.svg";
-import Group3 from "./assets/Group 3.png";
+import Group3 from "./assets/Group3.png";
 import plus from "./assets/plus.svg";
 import whitecopy2 from "./assets/whitecopy2.svg";
 import whitecopy3 from "./assets/whitecopy3.svg";
 import iPhone123 from "./assets/iPhone123.png";
 import iPhone121 from "./assets/iPhone121.png";
 import iPhone122 from "./assets/iPhone122.png";
-import iPhone124 from "./assets/iPhone124.png";
+import iPhone124 from "./assets/iPhone124.png"; 
 import iPhone125 from "./assets/iPhone125.png";
 import woman from "./assets/woman.png";
 import signup from "./assets/signup.png";
@@ -81,7 +81,7 @@ function App() {
       <section>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6" style={{ background: "black" }}>
+            <div className="col-md-6" style={{ background: "red" }}>
               <img src={Group3} className="MainImageCustm" />
             </div>
             <div className="col-md-5 paddingMainText">
@@ -192,7 +192,7 @@ function App() {
         <div className="container">
           <div
             className="centerRow row spaceImage"
-            style={{ background: "black" }}
+            style={{ background: "red" }}
           >
             <div className="col-auto col-lg-2 col-md-3 col-sm-4 spaceImage">
               <img src={iPhone123} />
