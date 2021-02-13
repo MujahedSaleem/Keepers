@@ -1,0 +1,202 @@
+.centerRow {
+    display: flex;
+    justify-content: center;
+}
+
+.transparentButton {
+    background-color: rgba(0,0,0,0) !important;
+    border: 1px solid #fffbfb;
+    border-left: 0px none #fffbfb;
+    border-top: 1px none #fffbfb;
+    border-right: 1px none #fffbfb;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+@media (max-width:575px) {
+    .marginImageCustom {
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .spaceImage {
+        margin-right: 22px;
+    }
+}
+
+.bottom-arrow {
+    padding: 22px;
+    background-color: #DCF6F8;
+    border: 1px solid #D7EDEE;
+    border-radius: 4px;
+}
+
+.bottom-arrow:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    right: 0px;
+    margin: 22px 31px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #D7EDEE;
+    border-left: 3px solid transparent;
+    border-right: 17px solid transparent;
+}
+
+.fontCustom {
+    font-size: 13px;
+}
+
+.fontCustom {
+    line-height: 30px;
+    font-size: 24px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+line-height: 30px;
+font-size: 24px;
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+@media (max-width:575px) {
+    .fontCustom {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .fontCustom {
+        line-height: 30px;
+        font-size: 18px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .fontCustom {
+        line-height: 30px;
+        font-size: 16px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+}
+
+.fontscustom {
+    font-size: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    max-width: 518px;
+    max-height: 92px;
+    letter-spacing: 0px;
+}
+
+.MainImageCustm {
+    max-width: 585px;
+    max-height: 660px;
+}
+
+@media (max-width:575px) {
+    .MainImageCustm {
+        width: 100%;
+    }
+}
+
+.paddingMainText {
+    padding-top: 140px;
+}
+
+@media (max-width:575px) {
+    .paddingMainText {
+        padding-top: 0px;
+        font-size: 18px;
+        height: 100%;
+        max-height: 381px;
+    }
+
+    .fontscustom {
+        font-size: 29px;
+    }
+}
+
+.wearekeep {
+    font-size: 18px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    max-width: 508px;
+    max-height: 184px;
+    margin-top: 39px;
+}
+
+@media (max-width:575px) {
+    .wearekeep {
+        padding-top: 0px;
+        height: 100%;
+        font-size: 14px;
+    }
+}
+
+.customCont {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.CustomBoxLen {
+    width: 407px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-left: 2px;
+    margin-top: 15px;
+}
+
+@media (max-width:575px) {
+    .CustomBoxLen {
+        width: 17rem;
+        font-size: 14px;
+    }
+}
+
+/* .xo {
+    width: 407px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-left: 2px;
+    margin-top: 15px;
+} */
+@media (min-width:992px) {
+    .marginCusomLG {
+        margin-top: 41px;
+    }
+
+    .CustomBoxLen {
+        width: 106%;
+    }
+}
+
+@media (max-width:575px) {
+    .customCont {
+        width: 70%;
+    }
+
+    .marginForTheLast {
+        margin-top: 37px;
+    }
+}
+
+.mainCOnfig {
+    font-size: 24px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+@media (max-width:575px) {
+    .mainCOnfig {
+        font-size: 17px;
+    }
+}
+
+.flexWoman {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width:575px) {
+    .flexWoman {
+        justify-content: center;
+    }
+}
