@@ -1,10 +1,38 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: "Barlow Regular";
+  src: local("Barlow Regular"), url("./fonts/Barlow-Regular.eot?") format("eot"),
+    url("./fonts/Barlow-Regular.woff") format("woff"),
+    url("./fonts/Barlow-Regular.ttf") format("truetype"),
+    url("./fonts/Barlow-Regular.svg#Barlow-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow SemiBold";
+  src: local("Barlow SemiBold"),
+    url("./fonts/Barlow-SemiBold.eot?") format("eot"),
+    url("./fonts/Barlow-SemiBold.woff") format("woff"),
+    url("./fonts/Barlow-SemiBold.ttf") format("truetype"),
+    url("./fonts/Barlow-SemiBold.svg#Barlow-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
+body {
+  background-color: rgb(244, 244, 244);
+  font-family: "Barlow Regular";
+}
+.container {
+  background-color: white;
+}
 .centerRow {
   display: flex;
   justify-content: center;
 }
-
+.CustomT {
+  padding: 0px 2rem;
+}
 .transparentButton {
   background-color: rgba(0, 0, 0, 0) !important;
   border: 1px solid #fffbfb;
@@ -13,12 +41,6 @@
   border-right: 1px none #fffbfb;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .spaceImage {
-    margin-right: 22px;
-  }
 }
 
 .bottom-arrow {
@@ -48,38 +70,16 @@
 .fontCustom {
   line-height: 30px;
   font-size: 24px;
-  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-line-height: 30px;
-font-size: 24px;
-font-family: "Barlow Semi Condensed", sans-serif;
-
-@media (max-width: 575px) {
-  .fontCustom {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .fontCustom {
-    line-height: 30px;
-    font-size: 18px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .fontCustom {
-    line-height: 30px;
-    font-size: 16px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-  }
+.flexWoman {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .fontscustom {
   font-size: 40px;
-  font-family: "Barlow Semi Condensed", sans-serif;
   max-width: 518px;
   max-height: 92px;
   letter-spacing: 0px;
@@ -89,15 +89,53 @@ font-family: "Barlow Semi Condensed", sans-serif;
   max-width: 585px;
   max-height: 660px;
 }
+.paddingMainText {
+  padding-top: 140px;
+}
+.wearekeep {
+  font-size: 18px;
+  max-width: 508px;
+  max-height: 184px;
+  margin-top: 39px;
+}
+.customCont {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
 
+.CustomBoxLen {
+  width: 407px;
+  margin-left: 2px;
+  margin-top: 15px;
+}
+
+.mainCOnfig {
+  font-size: 24px;
+}
+.signUpImage {
+  background-image: url('assets/signup.png');
+  margin-top: 62px;
+  background-repeat: no-repeat;
+}
 @media (max-width: 575px) {
   .MainImageCustm {
     width: 100%;
   }
 }
-
-.paddingMainText {
-  padding-top: 140px;
+@media (max-width: 1200px) and (min-width: 764px) {
+  .MainImageCustm {
+    width: 100%;
+  }
+  .paddingMainText {
+    padding-top: 5em;
+  }
+  .fontscustom {
+    font-size: 1.5rem;
+  }
+  .wearekeep {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 575px) {
@@ -113,14 +151,6 @@ font-family: "Barlow Semi Condensed", sans-serif;
   }
 }
 
-.wearekeep {
-  font-size: 18px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  max-width: 508px;
-  max-height: 184px;
-  margin-top: 39px;
-}
-
 @media (max-width: 575px) {
   .wearekeep {
     padding-top: 0px;
@@ -128,18 +158,12 @@ font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 14px;
   }
 }
-
-.customCont {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-}
-
-.CustomBoxLen {
-  width: 407px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  margin-left: 2px;
-  margin-top: 15px;
+@media (max-width: 575px) {
+  .wearekeep {
+    padding-top: 0px;
+    height: 100%;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -149,12 +173,11 @@ font-family: "Barlow Semi Condensed", sans-serif;
   }
 }
 
-/* .xo {
-  width: 407px;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  margin-left: 2px;
-  margin-top: 15px;
-} */
+@media (max-width: 575px) {
+  .fontCustom {
+    font-size: 16px;
+  }
+}
 @media (min-width: 992px) {
   .marginCusomLG {
     margin-top: 41px;
@@ -175,25 +198,47 @@ font-family: "Barlow Semi Condensed", sans-serif;
   }
 }
 
-.mainCOnfig {
-  font-size: 24px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
 @media (max-width: 575px) {
   .mainCOnfig {
     font-size: 17px;
   }
 }
 
-.flexWoman {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media (max-width: 575px) {
   .flexWoman {
     justify-content: center;
+  }
+}
+
+@media (max-width: 272px) {
+  .navImage {
+    width: 3rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .spaceImage {
+    margin-right: 22px;
+  }
+  .customHeight {
+    height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .fontCustom {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .customHeight {
+    height: 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .fontCustom {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .customCont {
+    width: 0px;
   }
 }
