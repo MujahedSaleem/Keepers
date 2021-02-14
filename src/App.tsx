@@ -367,14 +367,14 @@ function App() {
                 >
                   Calling all Drei employees with children aged 6-14.
                   <br />
-                  Please download the new, Austrian version of the app here:
-                  <br />
                   To participate in the Beta-Test, please follow this
-                  instruction:<br/> 1) Register for a free Trial Account<br/> 2) Download
-                  the Keepers Child Safety App on your device and follow the
-                  install-process.<br/> 3) Once you have created a parent account,
-                  you will be asked to share a link with your child's device.
-                  Please open the link on your child's device and finish the
+                  instruction:
+                  <br /> 1) Register for a free Trial Account
+                  <br /> 2) Download the Keepers Child Safety App on your device
+                  and follow the install-process.
+                  <br /> 3) Once you have created a parent account, you will be
+                  asked to share a link with your child's device. Please open
+                  the link on your child's device and finish the
                   install-process.
                   <img
                     src={appstore}
@@ -459,7 +459,7 @@ function App() {
                   />
                   <label
                     className="form-check-label"
-                    style={{ color: "white" }}
+                    style={{ color: "white", fontSize: "0.58rem" }}
                   >
                     I agree to Keepers{" "}
                     <a href="#">Privacy Terms & Conditions</a> and allow Keepers
@@ -502,18 +502,22 @@ function App() {
                   feedback, thoughts and ideas on the Keepers App. Please click
                   here to choose a time slot. <br />
                   <br />
-                  For any enquiries, feedback or bug reports please contact
-                  Barbara Haiden at{" "}
-                  <a href="mailto: family@drei.com" target="_blank">
-                    family@drei.com.{" "}
-                  </a>
-                  For any technical questions feel free to contact us at &nbsp;
-                  <a
-                    href="mailto: support@keeperschildsafety.net"
-                    target="_blank"
-                  >
-                    support@keeperschildsafety.net
-                  </a>
+                  <span style={{ fontSize: "0.94rem" }}>
+                    {" "}
+                    For any enquiries, feedback or bug reports please contact
+                    Barbara Haiden at{" "}
+                    <a href="mailto: family@drei.com" target="_blank">
+                      family@drei.com.{" "}
+                    </a>
+                    For any technical questions feel free to contact us at
+                    &nbsp;
+                    <a
+                      href="mailto: support@keeperschildsafety.net"
+                      target="_blank"
+                    >
+                      support@keeperschildsafety.net
+                    </a>
+                  </span>
                 </p>
               </div>
             </div>
@@ -657,7 +661,7 @@ function App() {
                   />
                   <label
                     className="form-check-label"
-                    style={{ color: "white" }}
+                    style={{ color: "white", fontSize: "0.58rem" }}
                   >
                     I agree to Keepers{" "}
                     <a href="#">Privacy Terms & Conditions</a> and allow Keepers
