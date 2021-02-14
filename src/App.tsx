@@ -410,7 +410,7 @@ function App() {
             <div className="centerRow row">
               <div
                 className="col-auto col-lg-4 col-md-4 col-md-5 col-sm-6 col-xl-3"
-                style={{ marginTop: "79px", marginBottom: "79px" }}
+                style={{ marginTop: "70px", marginBottom: "79px" }}
               >
                 <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
                   SIGN UP NOW FOR A <br />
@@ -481,7 +481,7 @@ function App() {
                   className="w-100"
                   src={woman}
                   alt=""
-                  style={{ maxHeight: "230px", maxWidth: "300px" }}
+                  style={{ height: "241px", maxWidth: "300px" }}
                 />{" "}
               </div>
               <div
@@ -607,7 +607,7 @@ function App() {
             <div className="centerRow row">
               <div
                 className="col-auto col-lg-4 col-md-4 col-md-5 col-sm-6 col-xl-3"
-                style={{ marginTop: "79px", marginBottom: "79px" }}
+                style={{ marginTop: "70px", marginBottom: "79px" }}
               >
                 <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
                   SIGN UP NOW FOR A <br />
