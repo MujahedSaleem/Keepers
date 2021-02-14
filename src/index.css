@@ -15,7 +15,7 @@
     url("./fonts/Barlow-SemiBold.woff") format("woff"),
     url("./fonts/Barlow-SemiBold.ttf") format("truetype"),
     url("./fonts/Barlow-SemiBold.svg#Barlow-SemiBold") format("svg");
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -64,12 +64,8 @@ body {
 }
 
 .fontCustom {
-  font-size: 13px;
-}
-
-.fontCustom {
   line-height: 30px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .flexWoman {
@@ -111,10 +107,10 @@ body {
 }
 
 .mainCOnfig {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .signUpImage {
-  background-image: url('assets/signup.png');
+  background-image: url("assets/signup.png");
   margin-top: 62px;
   background-repeat: no-repeat;
 }
@@ -222,6 +218,9 @@ body {
   .customHeight {
     height: 100px;
   }
+  .customeLength{
+    font-size: 0.7rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .fontCustom {
@@ -230,6 +229,15 @@ body {
   }
   .customHeight {
     height: 100px;
+  }
+  .fontCustom {
+    font-size: 0.8rem;
+  }
+  .mainCOnfig {
+    font-size: 1rem;
+  }
+  .customeLength{
+    font-size: 0.9rem;
   }
 }
 
@@ -240,5 +248,8 @@ body {
   }
   .customCont {
     width: 0px;
+  }
+  .mainCOnfig {
+    font-size: 1rem;
   }
 }

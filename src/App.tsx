@@ -12,25 +12,24 @@ import iPhone122 from "./assets/iPhone122.png";
 import iPhone124 from "./assets/iPhone124.png";
 import iPhone125 from "./assets/iPhone125.png";
 import woman from "./assets/woman.png";
-import signup from "./assets/signup.png";
-import rekuten from "./assets/rekuten.png";
+import rekuten from "./assets/rekuten@2x.png";
 import phoneSmartphone from "./assets/phoneSmartphone.svg";
 import locationPin from "./assets/locationPin.svg";
-import iia from "./assets/iia.png";
-import hut from "./assets/hut.png";
-import horizon from "./assets/horizon.png";
+import iia from "./assets/iia@2x.png";
+import hut from "./assets/hut@2x.png";
+import horizon from "./assets/horizon@2x.png";
 import horizontalDials from "./assets/horizontalDials.svg";
 import googlePlay from "./assets/googlePlay.png";
-import google from "./assets/google.png";
-import deloitte from "./assets/deloitte.png";
+import google from "./assets/google@2x.png";
+import deloitte from "./assets/deloitte@2x.png";
 import clock from "./assets/clock.svg";
 import confirm from "./assets/confirm.svg";
-import bezeq from "./assets/bezeq.png";
-import aws from "./assets/aws.png";
+import bezeq from "./assets/bezeq@2x.png";
+import aws from "./assets/aws@2x.png";
 import appstore from "./assets/appstore.png";
-import allot from "./assets/allot.png";
+import allot from "./assets/allot@2x.png";
 import alert from "./assets/alert.svg";
-import vodafone from "./assets/vodafone.png";
+import vodafone from "./assets/vodafone@2x.png";
 
 function App() {
   let activemobile: boolean = false;
@@ -75,7 +74,7 @@ function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler11">
-            <button
+            <a
               className="btn"
               type="submit"
               style={{
@@ -85,9 +84,10 @@ function App() {
                 fontFamily: '"Barlow Semi Condensed", sans-serif',
                 fontSize: "20px",
               }}
+              href="#signUp"
             >
               <b>Start the trial</b>
-            </button>
+            </a>
           </div>
         </nav>
       )}{" "}
@@ -124,7 +124,7 @@ function App() {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarToggler10">
-              <button
+              <a
                 className="btn"
                 type="submit"
                 style={{
@@ -133,9 +133,10 @@ function App() {
                   fontFamily: '"Barlow Semi Condensed", sans-serif',
                   fontSize: "20px",
                 }}
+                href="#signUp"
               >
                 <b>Start the trial</b>
-              </button>
+              </a>
             </div>
           </nav>
         )}{" "}
@@ -159,7 +160,7 @@ function App() {
                 Keepers Child Safety App specifically for families in Austria.
                 Protect your child with Keepers - Join the Beta-Testing Phase!"
               </p>
-              <button
+              <a
                 type="button"
                 className="btn btn-light"
                 style={{
@@ -172,10 +173,10 @@ function App() {
                   backgroundColor: "#ffae3f",
                   borderRadius: "9px",
                 }}
+                href="#signUp"
               >
                 <span
                   style={{
-                    fontFamily: "Barlow SemiBold",
                     fontSize: "20px",
                     textAlign: "center",
                   }}
@@ -194,7 +195,7 @@ function App() {
                     &nbsp;FREE TRIAL ACCOUNT
                   </span>
                 </b>
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -272,13 +273,15 @@ function App() {
             </div>
             <div className="CustomT arrow marginCusomLG marginForTheLast row">
               <div className="col-lg-4 col-md-6">
-                <div className="bottom-arrow">
+                <div className="bottom-arrow text-xl-nowrap text-md-nowrap text-lg-nowrap text-sm-nowrap">
                   <p>
                     "For the last year the Keepers team and my team here at Drei
                     worked closely together, fueled by a strong sense of
                     purpose, to create an app that truly enables parents to
                     support their children when they learn how to take their
                     first steps in the digital world.”
+                    <br></br>
+                    <br></br>
                   </p>
                 </div>
                 <div className="CustomBoxLen row">
@@ -300,6 +303,8 @@ function App() {
                     purpose, to create an app that truly enables parents to
                     support their children when they learn how to take their
                     first steps in the digital world.”
+                    <br></br>
+                    <br></br>
                   </p>
                 </div>
                 <div className="CustomBoxLen row">
@@ -344,7 +349,7 @@ function App() {
         <section>
           <div className="container" style={{ marginTop: "77px" }}>
             <div className="centerRow row">
-              <div style={{ maxWidth: "654px" }} className="col-md-9">
+              <div style={{ maxWidth: "680px" }} className="col-md-9">
                 <h3 className="mainCOnfig">
                   WE ARE ASKING ALL DREI EMPLOYEES TO <br />
                   <b>DOWNLOAD OUR NEW APP TODAY AND JOIN OUR BETA TEST</b>
@@ -388,7 +393,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="signUp">
           <div className="container-fluid signUpImage">
             <div className="centerRow row">
               <div
@@ -397,7 +402,7 @@ function App() {
               >
                 <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
                   SIGN UP NOW FOR A <br />
-                  FREE TRIAL CCOUNT:
+                  FREE TRIAL ACCOUNT:
                 </h3>
                 <input
                   type="text"
@@ -577,7 +582,7 @@ function App() {
               >
                 <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
                   SIGN UP NOW FOR A <br />
-                  FREE TRIAL CCOUNT:
+                  FREE TRIAL ACCOUNT:
                 </h3>
                 <input
                   type="text"
@@ -622,8 +627,11 @@ function App() {
         {/* Placed at the end of the document so the pages load faster */}
         <footer>
           <div className="container">
-            <div className="row" style={{ paddingLeft: 0, paddingTop: "56px" }}>
-              <div className="col-md-4 col-md-5">
+            <div
+              className="row"
+              style={{ paddingTop: "56px", paddingLeft: "3vw" }}
+            >
+              <div className="col-auto">
                 <h3
                   style={{ fontFamily: '"Barlow Semi Condensed", sans-serif' }}
                 >
@@ -631,7 +639,7 @@ function App() {
                 </h3>
               </div>
             </div>
-            <div className="centerRow row">
+            <div className="row" style={{ paddingLeft: "3vw" }}>
               <div className="col-auto col-md-3">
                 <a href="#">
                   {" "}
@@ -682,6 +690,8 @@ function App() {
                   />{" "}
                 </a>
               </div>
+            </div>
+            <div className="centerRow row">
               <div className="col-auto col-md-2 col-sm-3">
                 <a href="#">
                   {" "}
