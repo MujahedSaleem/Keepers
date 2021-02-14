@@ -67,16 +67,14 @@ function App() {
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarToggler10"
+            data-target="#navbarToggler11"
+            aria-controls="navbarToggler11"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span
-              className="navbar-toggler-icon"
-              style={{ alignItems: "center" }}
-            />
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarToggler10">
+          <div className="collapse navbar-collapse" id="navbarToggler11">
             <button
               className="btn"
               type="submit"
@@ -96,7 +94,7 @@ function App() {
       <div className="container">
         {!activemobile && (
           <nav
-            className="navbar navbar-expand-lg navbar-light "
+            className="navbar navbar-expand-md navbar-light "
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -118,14 +116,13 @@ function App() {
               type="button"
               data-toggle="collapse"
               data-target="#navbarToggler10"
+              aria-controls="navbarToggler10"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span
-                className="navbar-toggler-icon"
-                style={{ alignItems: "center" }}
-              />
+              <span className="navbar-toggler-icon"></span>
             </button>
+
             <div className="collapse navbar-collapse" id="navbarToggler10">
               <button
                 className="btn"
