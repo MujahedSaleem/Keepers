@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="52px" viewBox="0 0 55 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>6E2EF408-13A3-4D8C-93E8-5530E53CF7F4</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-296.000000, -3342.000000)" stroke="#00818C" stroke-width="1.91">
+            <g id="horizontal-dials,-dials,-sliders,-settings,-options,-preferences" transform="translate(296.000000, 3343.000000)">
+                <circle id="Oval" cx="43.1527273" cy="4.69636364" r="4.51454545"></circle>
+                <circle id="Oval" cx="11.5745455" cy="25" r="4.51454545"></circle>
+                <circle id="Oval" cx="27.3636364" cy="45.3036364" r="4.51454545"></circle>
+                <line x1="0.3" y1="4.69636364" x2="38.6381818" y2="4.69636364" id="Path"></line>
+                <line x1="47.6672727" y1="4.69636364" x2="54.4272727" y2="4.69636364" id="Path"></line>
+                <line x1="0.3" y1="25" x2="7.06" y2="25" id="Path"></line>
+                <line x1="16.0890909" y1="25" x2="54.4272727" y2="25" id="Path"></line>
+                <line x1="0.3" y1="45.3036364" x2="22.8490909" y2="45.3036364" id="Path"></line>
+                <line x1="31.8781818" y1="45.3036364" x2="54.4272727" y2="45.3036364" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>
