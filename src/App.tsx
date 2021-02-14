@@ -233,6 +233,10 @@ function App() {
                       &amp; control your children's experience in the digital
                       world.
                     </span>
+                    The Keepers Child Safety App is GDPR-compliant with
+                    end-to-end encryption. We are limiting the collection and
+                    usage of any personal data to no other purpose than
+                    protecting children in the digital world.
                   </p>
                 </h3>
               </div>
@@ -363,8 +367,15 @@ function App() {
                 >
                   Calling all Drei employees with children aged 6-14.
                   <br />
-                  Please download the new, Austria version of the app here:
+                  Please download the new, Austrian version of the app here:
                   <br />
+                  To participate in the Beta-Test, please follow this
+                  instruction:<br/> 1) Register for a free Trial Account<br/> 2) Download
+                  the Keepers Child Safety App on your device and follow the
+                  install-process.<br/> 3) Once you have created a parent account,
+                  you will be asked to share a link with your child's device.
+                  Please open the link on your child's device and finish the
+                  install-process.
                   <img
                     src={appstore}
                     style={{
@@ -379,11 +390,12 @@ function App() {
                   />
                   <br />
                   <br />
-                  Once the app is downloaded on your phone, please sign up and
-                  follow the instructions. You will be asked to then share the
-                  app with your children’s devices which will seamlessly link
-                  the accounts, And make sure you fill in your details in the
-                  box below for free access to your premium account.
+                  Once the app is downloaded on your device, please follow the
+                  sign up instructions. After creating an account on your device
+                  you will be asked to share the app with you child's device
+                  which will seamlessly link the accounts. Make sure to fill in
+                  your details in the box below for free access to your premium
+                  account!.
                 </p>
                 <small>
                   Note: You will see a payment screen for testing reasons,
@@ -438,26 +450,39 @@ function App() {
                     <b>SIGN UP NOW</b>
                   </span>
                 </button>
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    className="form-check-label"
+                    style={{ color: "white" }}
+                  >
+                    I agree to Keepers{" "}
+                    <a href="#">Privacy Terms & Conditions</a> and allow Keepers
+                    to contact me for marketing-related purposes.
+                  </label>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section>
           <div className="container" style={{ marginTop: "64px" }}>
-            <div className="centerRow row">
+            <div className="centerRow row" style={{ alignItems: "end" }}>
               <div
                 className="col-12 col-md-5 col-sm-8 col-xl-4 flexWoman"
                 style={{ padding: "0px" }}
               >
-                <a href="#">
-                  {" "}
-                  <img
-                    className="w-100"
-                    src={woman}
-                    alt=""
-                    style={{ maxHeight: "218px", maxWidth: "300px" }}
-                  />{" "}
-                </a>
+                <img
+                  className="w-100"
+                  src={woman}
+                  alt=""
+                  style={{ maxHeight: "230px", maxWidth: "300px" }}
+                />{" "}
               </div>
               <div
                 className="col-md-7 customHeight"
@@ -472,18 +497,22 @@ function App() {
                   </p>
                 </h3>
                 <p style={{ fontSize: "16px" }}>
-                  We are inviting you to join us for focus group on a Teams
-                  meeting on <b>Thursday at 17:00</b> CET to hear all your
-                  feedback, thoughts and ideas on the Keepers app.
+                  We are inviting you to participate in our <b>focus group</b>{" "}
+                  meeting via Teams <br></br>(max. 5 persons/group) to hear your
+                  feedback, thoughts and ideas on the Keepers App. Please click
+                  here to choose a time slot. <br />
                   <br />
-                  <br />
-                  &nbsp;Please click here to let us know if you are willing to
-                  join us for this session.
-                  <br />
-                  <br />
-                  For any other questions feel free to contact us at:
-                  <a href="mailto: kids@drei.com" target="_blank">
-                    kids@drei.com
+                  For any enquiries, feedback or bug reports please contact
+                  Barbara Haiden at{" "}
+                  <a href="mailto: family@drei.com" target="_blank">
+                    family@drei.com.{" "}
+                  </a>
+                  For any technical questions feel free to contact us at &nbsp;
+                  <a
+                    href="mailto: support@keeperschildsafety.net"
+                    target="_blank"
+                  >
+                    support@keeperschildsafety.net
                   </a>
                 </p>
               </div>
@@ -501,10 +530,10 @@ function App() {
               </div>
               <div className="col-md-7">
                 <p>
-                  Suspicious text detection auto monitoring and reporting of any
-                  suspicious texts detect risky content from incoming / outgoing
-                  texts on social media app detect WhatsApp, Telegram, Viber,
-                  Instagram, Snapchat, Line, Kik, TikTok, Discord, Vkontakte.
+                  Suspicious text detection, auto-monitoring and reporting of
+                  any suspicious texts. Detect risky content from incoming /
+                  outgoing texts on social media (WhatsApp, Telegram, Viber,
+                  Instagram, Snapchat, Line, Kik, TikTok, Discord, Vkontakte).{" "}
                 </p>
               </div>
             </div>
@@ -618,6 +647,23 @@ function App() {
                     <b>SIGN UP NOW</b>
                   </span>
                 </button>
+
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    className="form-check-label"
+                    style={{ color: "white" }}
+                  >
+                    I agree to Keepers{" "}
+                    <a href="#">Privacy Terms & Conditions</a> and allow Keepers
+                    to contact me for marketing-related purposes.
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -635,7 +681,7 @@ function App() {
                 <h3
                   style={{ fontFamily: '"Barlow Semi Condensed", sans-serif' }}
                 >
-                  <b>Global Partnership</b>
+                  <b>Global Partnerships</b>
                 </h3>
               </div>
             </div>
