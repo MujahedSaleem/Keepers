@@ -30,7 +30,9 @@ import appstore from "./assets/appstore.png";
 import allot from "./assets/allot@2x.png";
 import alert from "./assets/alert.svg";
 import { Carousel } from "react-bootstrap";
+import Group3Mobile from "./assets/Group3MobileS.png";
 import vodafone from "./assets/vodafone@2x.png";
+
 class App extends Component {
   queries = {
     xs: "(max-width: 320px)", //query for xs devices
@@ -66,7 +68,7 @@ class App extends Component {
       <>
         {this.activemobile && (
           <nav
-            className="navbar navbar-expand-lg navbar-light bg-light"
+            className="navbar  navbar-light bg-light"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -83,39 +85,15 @@ class App extends Component {
                 <img className="navImage" src={Vodafone} />
               </div>
             </div>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarToggler11"
-              aria-controls="navbarToggler11"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarToggler11">
-              <a
-                className="btn"
-                type="submit"
-                style={{
-                  maxWidth: "148px",
-                  width: "100%",
-                  backgroundColor: "rgb(56,201,213)",
-                  fontFamily: '"Barlow Semi Condensed", sans-serif',
-                  fontSize: "20px",
-                }}
-                href="#signUp"
-              >
-                <b>Start the trial</b>
-              </a>
-            </div>
+            <a className="btn custombuttonT" type="submit" href="#signUp">
+              <b>Start the trial</b>
+            </a>
           </nav>
         )}{" "}
         <div className="container">
           {!this.activemobile && (
             <nav
-              className="navbar navbar-expand-md navbar-light "
+              className="navbar  navbar-light "
               style={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -163,105 +141,115 @@ class App extends Component {
           )}{" "}
           <section>
             <div className="row">
-              <div className="col-md-6">
-                <img src={Group3} className="MainImageCustm" />
+              <div className="col-md-6 p-0">
+                <img
+                  src={this.activemobile ? Group3Mobile : Group3}
+                  className="MainImageCustm"
+                />
               </div>
               <div className="col-md-5 paddingMainText">
                 <h3 className="fontscustom">
                   <b>
-                    Discover Keepers: <br />
+                    DISCOVER KEEPERS: <br />
                   </b>
-                  Join us for Beta-Testing
+                  <h4 style={{ marginTop: "10px" }}>
+                    {" "}
+                    JOIN US FOR BETA-TESTING
+                  </h4>
+                  <br></br>
                 </h3>
                 <p className="wearekeep">
                   We are Keepers Child Safety. A specialist Israeli cyber tech
                   company developing AI and Machine Learning technology to
                   PROTECT kids from cyberbullying, harassment and toxic content.
+                  <br />
+                  <br />
                   In cooperation with Drei we've created an exclusive version of
                   the Keepers Child Safety App specifically for families in
                   Austria. Protect your child with Keepers - Join the
                   Beta-Testing Phase!"
                 </p>
-                <a
-                  type="button"
-                  className="btn btn-light"
-                  style={{
-                    maxWidth: "268px",
-                    maxHeight: "63px",
-                    width: "100%",
-                    textAlign: "center",
-                    paddingBottom: "63px",
-                    paddingTop: "0px",
-                    backgroundColor: "#ffae3f",
-                    borderRadius: "9px",
-                  }}
-                  href="#signUp"
-                >
-                  <span
+                <div>
+                  <a
+                    type="button"
+                    className="btn btn-light"
                     style={{
-                      fontSize: "20px",
+                      maxWidth: "268px",
+                      maxHeight: "63px",
+                      width: "100%",
                       textAlign: "center",
+                      paddingBottom: "63px",
+                      paddingTop: "0px",
+                      backgroundColor: "#ffae3f",
+                      borderRadius: "9px",
                     }}
+                    href="#signUp"
                   >
-                    SIGN UP NOW FOR A
-                  </span>
-                  <br />
-                  <b>
                     <span
                       style={{
-                        fontFamily: "Barlow SemiBold",
                         fontSize: "20px",
                         textAlign: "center",
                       }}
                     >
-                      &nbsp;FREE TRIAL ACCOUNT
+                      SIGN UP NOW FOR A
                     </span>
-                  </b>
-                </a>
+                    <br />
+                    <b>
+                      <span
+                        style={{
+                          fontFamily: "Barlow SemiBold",
+                          fontSize: "20px",
+                          textAlign: "center",
+                        }}
+                      >
+                        &nbsp;FREE TRIAL ACCOUNT
+                      </span>
+                    </b>
+                  </a>
+                </div>{" "}
               </div>
             </div>
           </section>
           <section>
-            <div className="container" style={{ marginBottom: "33px" }}>
+            <div className="container">
               <div className="centerRow row">
                 <div
                   style={{
-                    fontFamily: "Barlow Regular",
-                    marginTop: "17px",
+                    marginTop: !this.activemobile?'10px':"100px",
                   }}
                   className="col-md-7"
                 >
                   <h3>
-                    <b>Keepers </b>Child Safety App
-                    <p
-                      style={{
-                        fontSize: "18px",
-                        marginTop: "21px",
-                        lineHeight: "27px",
-                      }}
-                    >
-                      The only app for German speaking countries that enables
-                      parents to DETECT suspicious and dangerous messages in
-                      their child's social media accounts. Notice dangerous
-                      messages in real-time without invading your children's
-                      privacy by manually scrolling through their chat history!
-                      This allows you to act quickly &amp; prevent them from
-                      harm.
-                      <br />
-                      <br />
-                      &nbsp;In addition Keepers offers important further child
-                      protection features to help you monitor{" "}
-                      <span style={{ color: "rgb(0,129,140)" }}>
-                        {" "}
-                        &amp; control your children's experience in the digital
-                        world.
-                      </span>
-                      The Keepers Child Safety App is GDPR-compliant with
-                      end-to-end encryption. We are limiting the collection and
-                      usage of any personal data to no other purpose than
-                      protecting children in the digital world.
-                    </p>
+                    <b>Keepers </b> {this.activemobile ? <br></br> : ""}Child
+                    Safety App
                   </h3>
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      marginTop: "21px",
+                      lineHeight: "27px",
+                    }}
+                  >
+                    The only app for German speaking countries that enables
+                    parents to DETECT suspicious and dangerous messages in their
+                    child's social media accounts. Notice dangerous messages in
+                    real-time without invading your children's privacy by
+                    manually scrolling through their chat history! This allows
+                    you to act quickly &amp; prevent them from harm.
+                    <br />
+                    <br />
+                    &nbsp;In addition Keepers offers important further child
+                    protection features to help you monitor{" "}
+                    <span style={{ color: "rgb(0,129,140)" }}>
+                      {" "}
+                      &amp; control your children's experience in the digital
+                      world.
+                    </span>
+                    The Keepers Child Safety App is GDPR-compliant with
+                    end-to-end encryption. We are limiting the collection and
+                    usage of any personal data to no other purpose than
+                    protecting children in the digital world.
+                  </p>
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "64px" }}>
@@ -271,9 +259,9 @@ class App extends Component {
                     DREI &amp; HUTCHISON
                   </h3>
                 </div>
-                <div className="col-8 col-lg-3 col-md-4 col-sm-5 col-xl-3">
+                <div className="col-12 col-lg-3 col-md-4 col-sm-5 col-xl-3">
                   <img src={Vodafone} />
-                  <img src={plus} />
+                  <img src={plus} className="sizePlus" />
                   <img src={whitecopy2} style={{ marginLeft: "12px" }} />
                 </div>
               </div>
@@ -331,14 +319,22 @@ class App extends Component {
                       purpose, to create an app that truly enables parents to
                       support their children when they learn how to take their
                       first steps in the digital world.”
-                      <br></br>
-                      <br></br>
+                      {!this.activemobile ? (
+                        <>
+                          <br></br>
+                        </>
+                      ) : (
+                        ""
+                      )}
                     </p>
                   </div>
                   <div className="CustomBoxLen row">
                     <img
                       src={Vodafone}
-                      style={{ width: "40px", height: "40px" }}
+                      style={{
+                        width: this.activemobile ? "28px" : "40px",
+                        height: "40px",
+                      }}
                     />
                     <p className="CustomLength customeLength">
                       <b>Barbara Haiden</b>,<br />
@@ -354,16 +350,24 @@ class App extends Component {
                       purpose, to create an app that truly enables parents to
                       support their children when they learn how to take their
                       first steps in the digital world.”
-                      <br></br>
-                      <br></br>
+                      {!this.activemobile ? (
+                        <>
+                          <br></br>
+                        </>
+                      ) : (
+                        ""
+                      )}
                     </p>
                   </div>
                   <div className="CustomBoxLen row">
                     <img
                       src={Vodafone}
-                      style={{ width: "40px", height: "40px" }}
+                      style={{
+                        width: this.activemobile ? "28px" : "40px",
+                        height: "40px",
+                      }}
                     />
-                    <p style={{ lineHeight: "17px" }}>
+                    <p style={{ lineHeight: "15px" }}>
                       <b>
                         Christian Haspl,
                         <br />
@@ -386,7 +390,10 @@ class App extends Component {
                   <div className="CustomBoxLen row xo">
                     <img
                       src={whitecopy3}
-                      style={{ width: "40px", height: "40px" }}
+                      style={{
+                        width: this.activemobile ? "21px" : "28px",
+                        height: "40px",
+                      }}
                     />
                     <p style={{ lineHeight: "17px" }}>
                       <b>Aviad Meshel</b>,<br />
@@ -401,10 +408,21 @@ class App extends Component {
             <div className="container" style={{ marginTop: "77px" }}>
               <div className="centerRow row">
                 <div style={{ maxWidth: "680px" }} className="col-md-9">
-                  <h3 className="mainCOnfig">
-                    WE ARE ASKING ALL DREI EMPLOYEES TO <br />
-                    <b>DOWNLOAD OUR NEW APP TODAY AND JOIN OUR BETA TEST</b>
-                  </h3>
+                  {this.activemobile ? (
+                    <h5>
+                      <b>
+                        WE ARE ASKING ALL DREI EMPLOYEES TO
+                        <br /> DOWNLOAD OUR NEW APP TODAY AND JOIN<br></br> OUR
+                        BETA TEST
+                      </b>
+                    </h5>
+                  ) : (
+                    <h3 className="mainCOnfig">
+                      WE ARE ASKING ALL DREI EMPLOYEES TO <br />
+                      <b>DOWNLOAD OUR NEW APP TODAY AND JOIN OUR BETA TEST</b>
+                    </h3>
+                  )}
+
                   <p
                     style={{
                       marginTop: "23px",
@@ -577,10 +595,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1">
-                  <img src={alert} />
+                <div className="col-md-1 col-2">
+                  <img src={alert} className="imageSecSize" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 col-10">
                   <p>
                     Suspicious text detection, auto-monitoring and reporting of
                     any suspicious texts. Detect risky content from incoming /
@@ -590,10 +608,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1">
-                  <img src={horizontalDials} />
+                <div className="col-md-1 col-2">
+                  <img src={horizontalDials} className="imageSecSize" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 col-10">
                   <p>
                     Website filter to shield kids from porn, gamble or other
                     threatening site track chilren’s browsing history. enter the
@@ -603,10 +621,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1">
-                  <img src={clock} />
+                <div className="col-md-1 col-2">
+                  <img src={clock} className="imageSecSize" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 col-10">
                   <p>
                     Screen time schedule It’s up to decide the right amount of
                     screen time for your child. Help your child make healthy
@@ -616,10 +634,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1">
-                  <img src={locationPin} />
+                <div className="col-md-1 col-2">
+                  <img src={locationPin} className="imageSecSize" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 col-10">
                   <p>
                     See where they are It’s helpful to be able to find your
                     child when they’re on the go. Create a safe zone for
@@ -629,10 +647,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1">
-                  <img src={phoneSmartphone} />
+                <div className="col-md-1 col-2">
+                  <img src={phoneSmartphone} className="imageSecSize" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 col-10">
                   <p>
                     Manage their device Whether it’s time to go play outside,
                     have dinner, or just spend time together, you can set
@@ -642,10 +660,10 @@ class App extends Component {
                 </div>
               </div>
               <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1">
-                  <img src={confirm} />
+                <div className="col-md-1 col-2">
+                  <img src={confirm} className="imageSecSize" />
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 col-10">
                   <p>
                     Balance privacy Keepers is the only parental control app
                     that prioritizes your kid’s privacy by only displaying
@@ -752,10 +770,9 @@ class App extends Component {
                   <a href="#">
                     {" "}
                     <img
-                      className="w-100"
                       src={iia}
                       alt=""
-                      style={{ height: "80px", width: "268px" }}
+                      style={{ height: "80px", maxWidth: "268px" }}
                     />{" "}
                   </a>
                 </div>
@@ -763,29 +780,22 @@ class App extends Component {
                   <a href="#">
                     {" "}
                     <img
-                      className="w-100"
                       src={google}
                       alt=""
-                      style={{ width: "126px", height: "80px" }}
+                      style={{ maxWidth: "126px", height: "80px" }}
                     />{" "}
                   </a>
                 </div>
                 <div className="col-auto col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img
-                      className="w-100"
-                      src={bezeq}
-                      alt=""
-                      style={{ height: "80px" }}
-                    />{" "}
+                    <img src={bezeq} alt="" style={{ height: "80px" }} />{" "}
                   </a>
                 </div>
                 <div className="col-auto col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
                     <img
-                      className="w-100"
                       src={vodafone}
                       alt=""
                       style={{ height: "80px" }}
@@ -797,30 +807,19 @@ class App extends Component {
                 <div className="col-auto col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img
-                      className="w-100"
-                      src={rekuten}
-                      alt=""
-                      style={{ height: "80px" }}
-                    />{" "}
+                    <img src={rekuten} alt="" style={{ height: "80px" }} />{" "}
+                  </a>
+                </div>
+                <div className="col-auto col-md-2 col-sm-3">
+                  <a href="#">
+                    {" "}
+                    <img src={allot} alt="" style={{ height: "80px" }} />{" "}
                   </a>
                 </div>
                 <div className="col-auto col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
                     <img
-                      className="w-100"
-                      src={allot}
-                      alt=""
-                      style={{ height: "80px" }}
-                    />{" "}
-                  </a>
-                </div>
-                <div className="col-auto col-md-2 col-sm-3">
-                  <a href="#">
-                    {" "}
-                    <img
-                      className="w-100"
                       src={deloitte}
                       alt=""
                       style={{ height: "80px" }}
@@ -830,23 +829,13 @@ class App extends Component {
                 <div className="col-auto col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img
-                      className="w-100"
-                      src={hut}
-                      alt=""
-                      style={{ height: "80px" }}
-                    />{" "}
+                    <img src={hut} alt="" style={{ height: "80px" }} />{" "}
                   </a>
                 </div>
                 <div className="col-auto col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img
-                      className="w-100"
-                      src={aws}
-                      alt=""
-                      style={{ height: "80px" }}
-                    />{" "}
+                    <img src={aws} alt="" style={{ height: "80px" }} />{" "}
                   </a>
                 </div>
               </div>
