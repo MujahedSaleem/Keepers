@@ -110,33 +110,19 @@ class App extends Component {
                   <img className="navImage" src={Vodafone} />
                 </div>
               </div>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarToggler10"
-                aria-controls="navbarToggler10"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+              <a
+                className="btn"
+                type="submit"
+                style={{
+                  width: "9rem",
+                  backgroundColor: "rgb(56,201,213)",
+                  fontFamily: '"Barlow Semi Condensed", sans-serif',
+                  fontSize: "20px",
+                }}
+                href="#signUp"
               >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-
-              <div className="collapse navbar-collapse" id="navbarToggler10">
-                <a
-                  className="btn"
-                  type="submit"
-                  style={{
-                    width: "9rem",
-                    backgroundColor: "rgb(56,201,213)",
-                    fontFamily: '"Barlow Semi Condensed", sans-serif',
-                    fontSize: "20px",
-                  }}
-                  href="#signUp"
-                >
-                  <b>Start the trial</b>
-                </a>
-              </div>
+                <b>Start the trial</b>
+              </a>
             </nav>
           )}{" "}
           <section>
@@ -215,7 +201,7 @@ class App extends Component {
               <div className="centerRow row">
                 <div
                   style={{
-                    marginTop: !this.activemobile?'10px':"100px",
+                    marginTop: !this.activemobile ? "10px" : "100px",
                   }}
                   className="col-md-7"
                 >

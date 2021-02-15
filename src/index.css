@@ -97,7 +97,6 @@ body {
 .customCont {
   display: flex;
   justify-content: space-between;
-  width: 85%;
 }
 
 .CustomBoxLen {
