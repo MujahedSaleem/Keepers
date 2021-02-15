@@ -168,7 +168,7 @@ class App extends Component {
                       paddingTop: "0px",
                       backgroundColor: "#ffae3f",
                       borderRadius: "9px",
-                      marginTop:'10px'
+                      marginTop: "20px",
                     }}
                     href="#signUp"
                   >
@@ -255,7 +255,7 @@ class App extends Component {
             </div>
           </section>
           <section>
-            <div className="container">
+            <div className="container" style={{marginTop:this.activemobile ?"10px":"0px"}}>
               <div className="centerRow row spaceImage">
                 {!this.activeCarousel && (
                   <>
@@ -392,7 +392,10 @@ class App extends Component {
             </div>
           </section>
           <section>
-            <div className="container" style={{ marginTop: "77px" }}>
+            <div
+              className="container"
+              style={{ marginTop: this.activemobile ? "40px" : "77px" }}
+            >
               <div className="centerRow row">
                 <div style={{ maxWidth: "680px" }} className="col-md-9">
                   {this.activemobile ? (
