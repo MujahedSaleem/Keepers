@@ -40,9 +40,11 @@ class App extends Component {
   };
   activemobile: boolean = false;
   activeCarousel: boolean = false;
+  activeCenterLgMd: boolean = false;
+
   mobile = matchMedia("(max-width:570px)");
   md = matchMedia(this.queries.sm);
-
+  mdLg = matchMedia("(min-width: 768px) and (max-width: 991px)");
   render() {
     this.activeCarousel = this.md.matches;
     this.md.onchange = (e) => {
@@ -51,7 +53,15 @@ class App extends Component {
       } else {
         this.activeCarousel = this.md.matches;
       }
-      console.log(e.media);
+      this.setState({});
+    };
+    this.activeCenterLgMd = this.mdLg.matches;
+    this.mdLg.onchange = (e) => {
+      if (e.matches) {
+        this.activeCenterLgMd = this.md.matches;
+      } else {
+        this.activeCenterLgMd = this.md.matches;
+      }
       this.setState({});
     };
     this.activemobile = this.mobile.matches;
@@ -154,7 +164,7 @@ class App extends Component {
                   <b>families in Austria</b>. Protect your child with Keepers -
                   Join the Beta-Testing Phase!
                 </p>
-                <div className={this.activemobile ? "centerRow" : ""}>
+                <div className={this.activemobile ? "centerRow mt-4" : ""}>
                   <a
                     type="button"
                     className="btn btn-light"
@@ -201,7 +211,7 @@ class App extends Component {
               <div className="centerRow row">
                 <div
                   style={{
-                    marginTop: !this.activemobile ? "10px" : "100px",
+                    marginTop: "100px",
                   }}
                   className="col-md-7"
                 >
@@ -428,34 +438,69 @@ class App extends Component {
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
-                  <div className="bottom-arrow">
-                    <p>
-                      We would like to thank everyone at Drei, and in particular
-                      Barbara Haiden and Christian Haspl for this hugely
-                      important and exciting partnership launch in Austria. We
-                      know that with your support, together we can help protect
-                      kids as they find their independence in the digital world.
-                    </p>
+                {this.activeCenterLgMd ? (
+                  <div className="row centerRow">
+                    <div className="col-lg-4 col-md-6 ">
+                      <div className="bottom-arrow">
+                        <p>
+                          We would like to thank everyone at Drei, and in
+                          particular Barbara Haiden and Christian Haspl for this
+                          hugely important and exciting partnership launch in
+                          Austria. We know that with your support, together we
+                          can help protect kids as they find their independence
+                          in the digital world.
+                        </p>
+                      </div>
+                      <div className="CustomBoxLen row xo">
+                        <img
+                          src={whitecopy3}
+                          className="mr-2"
+                          style={{
+                            width: this.activemobile ? "21px" : "28px",
+                            height: "40px",
+                          }}
+                        />
+                        <p style={{ lineHeight: "15px" }}>
+                          <b>
+                            Aviad Meshel,
+                            <br />
+                          </b>
+                          CEO, Keepers Child Safety <br />
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="CustomBoxLen row xo">
-                    <img
-                      src={whitecopy3}
-                      className="mr-2"
-                      style={{
-                        width: this.activemobile ? "21px" : "28px",
-                        height: "40px",
-                      }}
-                    />
-                    <p style={{ lineHeight: "15px" }}>
-                      <b>
-                        Aviad Meshel,
-                        <br />
-                      </b>
-                      CEO, Keepers Child Safety <br />
-                    </p>
+                ) : (
+                  <div className="col-lg-4 col-md-6 ">
+                    <div className="bottom-arrow">
+                      <p>
+                        We would like to thank everyone at Drei, and in
+                        particular Barbara Haiden and Christian Haspl for this
+                        hugely important and exciting partnership launch in
+                        Austria. We know that with your support, together we can
+                        help protect kids as they find their independence in the
+                        digital world.
+                      </p>
+                    </div>
+                    <div className="CustomBoxLen row xo">
+                      <img
+                        src={whitecopy3}
+                        className="mr-2"
+                        style={{
+                          width: this.activemobile ? "21px" : "28px",
+                          height: "40px",
+                        }}
+                      />
+                      <p style={{ lineHeight: "15px" }}>
+                        <b>
+                          Aviad Meshel,
+                          <br />
+                        </b>
+                        CEO, Keepers Child Safety <br />
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </section>
@@ -464,12 +509,12 @@ class App extends Component {
               <div className="centerRow row">
                 <div style={{ maxWidth: "680px" }} className="col-md-9">
                   {this.activemobile ? (
-                    <h5>
+                    <h6>
                       <b>
                         For all Drei employees with children aged 6-14:<br></br>{" "}
                         INSTALL KEEPERS & JOIN OUR BETA-TEST!
                       </b>
-                    </h5>
+                    </h6>
                   ) : (
                     <h3 className="mainCOnfig">
                       For all Drei employees with children aged 6-14:
@@ -507,11 +552,12 @@ class App extends Component {
                       style={{ marginTop: "28px", marginLeft: "37px" }}
                     />
                     <br />
-                    <br />
                   </p>
                   <small>
-                    Note: You will see a payment screen for testing reasons,
-                    however, you will not be charged.
+                    <b>
+                      Note: You will see a payment screen for testing reasons,
+                      however, you will not be charged.
+                    </b>
                   </small>
                 </div>
               </div>
@@ -835,82 +881,105 @@ class App extends Component {
                 </div>
               </div>
               <div className="row" style={{ paddingLeft: "3vw" }}>
-                <div className="col-auto col-md-3">
+                <div className="col-auto col-md-3 col-sm-2">
                   <a href="#">
                     {" "}
-                    <img src={horizon} alt="" style={{ width: "100%" }} />{" "}
+                    <img
+                      src={horizon}
+                      alt=""
+                      style={{ height: "60px", width: "100%" }}
+                    />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-3 col-sm-3 col-xl-2">
+                <div className="col-6 col-md-3 col-sm-3 col-xl-2">
                   <a href="#">
                     {" "}
                     <img
                       src={iia}
                       alt=""
-                      style={{ height: "80px", maxWidth: "268px" }}
+                      style={{ height: "80px", width: "100%" }}
                     />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
                     <img
                       src={google}
                       alt=""
-                      style={{ maxWidth: "126px", height: "80px" }}
+                      style={{ height: "80px", width: "100%" }}
                     />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img src={bezeq} alt="" style={{ height: "80px" }} />{" "}
+                    <img
+                      src={bezeq}
+                      alt=""
+                      style={{ height: "80px", width: "100%" }}
+                    />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
                     <img
                       src={vodafone}
                       alt=""
-                      style={{ height: "80px" }}
+                      style={{ height: "80px", width: "100%" }}
                     />{" "}
                   </a>
                 </div>
-              </div>
-              <div className="centerRow row">
-                <div className="col-auto col-md-2 col-sm-3">
+
+                <div className="col-6 col-md-2 col-sm-3 customemargin">
                   <a href="#">
                     {" "}
-                    <img src={rekuten} alt="" style={{ height: "80px" }} />{" "}
+                    <img
+                      src={rekuten}
+                      alt=""
+                      style={{ height: "80px", width: "100%" }}
+                    />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img src={allot} alt="" style={{ height: "80px" }} />{" "}
+                    <img
+                      src={allot}
+                      alt=""
+                      style={{ height: "80px", width: "100%" }}
+                    />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
                     <img
                       src={deloitte}
                       alt=""
-                      style={{ height: "80px" }}
+                      style={{ height: "80px", width: "100%" }}
                     />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img src={hut} alt="" style={{ height: "80px" }} />{" "}
+                    <img
+                      src={hut}
+                      alt=""
+                      style={{ height: "80px", width: "100%" }}
+                    />{" "}
                   </a>
                 </div>
-                <div className="col-auto col-md-2 col-sm-3">
+                <div className="col-6 col-md-2 col-sm-3">
                   <a href="#">
                     {" "}
-                    <img src={aws} alt="" style={{ height: "80px" }} />{" "}
+                    <img
+                      src={aws}
+                      alt=""
+                      style={{ height: "80px", width: "100%" }}
+                    />{" "}
                   </a>
                 </div>
               </div>

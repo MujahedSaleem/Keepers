@@ -230,9 +230,12 @@ body {
   }
 }
 
-@media (max-width: 272px) {
+@media (max-width: 280px) {
   .navImage {
     width: 3rem;
+  }
+  .wearekeep{
+    font-size: 14px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -246,13 +249,18 @@ body {
     font-size: 0.7rem;
   }
 }
+@media (min-width:770px){
+  .customemargin{
+    margin-left: 4rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .fontCustom {
     line-height: 30px;
     font-size: 18px;
   }
   .customHeight {
-    height: 30vh;
+    height: 17em;
   }
   .fontCustom {
     font-size: 0.8rem;
@@ -262,6 +270,10 @@ body {
   }
   .customeLength {
     font-size: 0.9rem;
+  }
+  .centerXON{
+    display: flex;
+    flex-direction: columns;
   }
 }
 
