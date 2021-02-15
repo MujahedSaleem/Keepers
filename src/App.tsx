@@ -245,7 +245,7 @@ class App extends Component {
                     DREI &amp; HUTCHISON
                   </h3>
                 </div>
-                <div className="col-12 col-lg-3 col-md-4 col-sm-5 col-xl-3">
+                <div className="col-8 col-lg-3 col-md-4 col-sm-5 col-xl-3">
                   <img src={Vodafone} />
                   <img src={plus} className="sizePlus" />
                   <img src={whitecopy2} style={{ marginLeft: "12px" }} />
@@ -538,7 +538,10 @@ class App extends Component {
                 </div>
                 <div
                   className="col-md-7 customHeight"
-                  style={{ background: "rgb(244,244,244)" }}
+                  style={{
+                    background: "rgb(244,244,244)",
+                    maxWidth: this.activemobile ? "300px" : "100%",
+                  }}
                 >
                   <h3 style={{ maxHeight: "127px" }}>
                     <b></b>
