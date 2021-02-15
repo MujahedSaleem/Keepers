@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Keepers.github.io/static/css/main.66aa732d.chunk.css",
-    "main.js": "/Keepers.github.io/static/js/main.3e242175.chunk.js",
-    "main.js.map": "/Keepers.github.io/static/js/main.3e242175.chunk.js.map",
+    "main.css": "/Keepers.github.io/static/css/main.ae2cc6a8.chunk.css",
+    "main.js": "/Keepers.github.io/static/js/main.db703656.chunk.js",
+    "main.js.map": "/Keepers.github.io/static/js/main.db703656.chunk.js.map",
     "runtime-main.js": "/Keepers.github.io/static/js/runtime-main.1a7b7a5d.js",
     "runtime-main.js.map": "/Keepers.github.io/static/js/runtime-main.1a7b7a5d.js.map",
     "static/css/2.150d169a.chunk.css": "/Keepers.github.io/static/css/2.150d169a.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.d9b12f85.chunk.js.map": "/Keepers.github.io/static/js/3.d9b12f85.chunk.js.map",
     "index.html": "/Keepers.github.io/index.html",
     "static/css/2.150d169a.chunk.css.map": "/Keepers.github.io/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.66aa732d.chunk.css.map": "/Keepers.github.io/static/css/main.66aa732d.chunk.css.map",
+    "static/css/main.ae2cc6a8.chunk.css.map": "/Keepers.github.io/static/css/main.ae2cc6a8.chunk.css.map",
     "static/js/2.11e84d29.chunk.js.LICENSE.txt": "/Keepers.github.io/static/js/2.11e84d29.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Keepers.github.io/static/media/signupxl.f3449d7e.png",
     "static/media/Group3.d5bef5ba.png": "/Keepers.github.io/static/media/Group3.d5bef5ba.png",
@@ -22,7 +22,6 @@
     "static/media/aws@2x.f181aafa.png": "/Keepers.github.io/static/media/aws@2x.f181aafa.png",
     "static/media/bezeq@2x.d972ca39.png": "/Keepers.github.io/static/media/bezeq@2x.d972ca39.png",
     "static/media/clock.756dfd62.svg": "/Keepers.github.io/static/media/clock.756dfd62.svg",
-    "static/media/confirm.caa85dce.svg": "/Keepers.github.io/static/media/confirm.caa85dce.svg",
     "static/media/google@2x.3911b101.png": "/Keepers.github.io/static/media/google@2x.3911b101.png",
     "static/media/horizon@2x.7717b6c3.png": "/Keepers.github.io/static/media/horizon@2x.7717b6c3.png",
     "static/media/horizontalDials.2726085d.svg": "/Keepers.github.io/static/media/horizontalDials.2726085d.svg",
@@ -40,13 +39,13 @@
     "static/media/white.70108c52.svg": "/Keepers.github.io/static/media/white.70108c52.svg",
     "static/media/whitecopy2.24754a78.svg": "/Keepers.github.io/static/media/whitecopy2.24754a78.svg",
     "static/media/whitecopy3.ccf5952a.svg": "/Keepers.github.io/static/media/whitecopy3.ccf5952a.svg",
-    "static/media/woman.797b728b.png": "/Keepers.github.io/static/media/woman.797b728b.png"
+    "static/media/woman.8d2729c3.png": "/Keepers.github.io/static/media/woman.8d2729c3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1a7b7a5d.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.11e84d29.chunk.js",
-    "static/css/main.66aa732d.chunk.css",
-    "static/js/main.3e242175.chunk.js"
+    "static/css/main.ae2cc6a8.chunk.css",
+    "static/js/main.db703656.chunk.js"
   ]
 }
