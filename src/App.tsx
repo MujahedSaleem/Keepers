@@ -168,6 +168,7 @@ class App extends Component {
                       paddingTop: "0px",
                       backgroundColor: "#ffae3f",
                       borderRadius: "9px",
+                      marginTop:'10px'
                     }}
                     href="#signUp"
                   >
