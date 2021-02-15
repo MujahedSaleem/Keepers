@@ -23,7 +23,6 @@ import googlePlay from "./assets/googlePlay.png";
 import google from "./assets/google@2x.png";
 import deloitte from "./assets/deloitte@2x.png";
 import clock from "./assets/clock.svg";
-import confirm from "./assets/confirm.svg";
 import bezeq from "./assets/bezeq@2x.png";
 import aws from "./assets/aws@2x.png";
 import appstore from "./assets/appstore.png";
@@ -90,7 +89,7 @@ class App extends Component {
             </a>
           </nav>
         )}{" "}
-        <div className="container">
+        <div className="container ">
           {!this.activemobile && (
             <nav
               className="navbar  navbar-light "
@@ -126,8 +125,8 @@ class App extends Component {
             </nav>
           )}{" "}
           <section>
-            <div className="row">
-              <div className="col-md-6 p-0">
+            <div className="row ">
+              <div className={this.activemobile ? "col-md-6 p-0" : "col-md-6 "}>
                 <img
                   src={this.activemobile ? Group3Mobile : Group3}
                   className="MainImageCustm"
@@ -150,17 +149,17 @@ class App extends Component {
                   PROTECT kids from cyberbullying, harassment and toxic content.
                   <br />
                   <br />
-                  In cooperation with Drei we've created an exclusive version of
-                  the Keepers Child Safety App specifically for families in
-                  Austria. Protect your child with Keepers - Join the
-                  Beta-Testing Phase!"
+                  In <b>cooperation with Drei</b> we've created an exclusive
+                  version of the Keepers Child Safety App specifically for{" "}
+                  <b>families in Austria</b>. Protect your child with Keepers -
+                  Join the Beta-Testing Phase!
                 </p>
-                <div>
+                <div className={this.activemobile ? "centerRow" : ""}>
                   <a
                     type="button"
                     className="btn btn-light"
                     style={{
-                      maxWidth: "268px",
+                      maxWidth: this.activemobile ? "400px" : "268px",
                       maxHeight: "63px",
                       width: "100%",
                       textAlign: "center",
@@ -198,7 +197,7 @@ class App extends Component {
             </div>
           </section>
           <section>
-            <div className="container">
+            <div>
               <div className="centerRow row">
                 <div
                   style={{
@@ -212,7 +211,7 @@ class App extends Component {
                   </h3>
                   <p
                     style={{
-                      fontSize: "18px",
+                      fontSize: "17.8px",
                       marginTop: "21px",
                       lineHeight: "27px",
                     }}
@@ -224,14 +223,34 @@ class App extends Component {
                     manually scrolling through their chat history! This allows
                     you to act quickly &amp; prevent them from harm.
                     <br />
+                    <div className={this.activemobile ? "centerRow" : ""}>
+                      <a
+                        type="button"
+                        className="btn btn-light"
+                        style={{
+                          maxWidth: this.activemobile ? "400px" : "268px",
+                          maxHeight: "63px",
+                          width: "100%",
+                          textAlign: "center",
+                          paddingTop: "0px",
+                          backgroundColor: "#ffae3f",
+                          borderRadius: "9px",
+                          marginTop: "20px",
+                        }}
+                        href="#signUp"
+                      >
+                        <span
+                          style={{
+                            fontSize: "20px",
+                            textAlign: "center",
+                          }}
+                        >
+                          {" "}
+                          Discover all features
+                        </span>
+                      </a>
+                    </div>{" "}
                     <br />
-                    &nbsp;In addition Keepers offers important further child
-                    protection features to help you monitor{" "}
-                    <span style={{ color: "rgb(0,129,140)" }}>
-                      {" "}
-                      &amp; control your children's experience in the digital
-                      world.
-                    </span>
                     The Keepers Child Safety App is GDPR-compliant with
                     end-to-end encryption. We are limiting the collection and
                     usage of any personal data to no other purpose than
@@ -246,7 +265,14 @@ class App extends Component {
                     DREI &amp; HUTCHISON
                   </h3>
                 </div>
-                <div className="col-8 col-lg-3 col-md-4 col-sm-5 col-xl-3">
+                <div
+                  className={
+                    "col-8 col-lg-3 col-md-4 col-sm-5 col-xl-3" +
+                    this.activeCarousel
+                      ? "centerRow"
+                      : ""
+                  }
+                >
                   <img src={Vodafone} />
                   <img src={plus} className="sizePlus" />
                   <img src={whitecopy2} style={{ marginLeft: "12px" }} />
@@ -255,7 +281,7 @@ class App extends Component {
             </div>
           </section>
           <section>
-            <div className="container" style={{marginTop:this.activemobile ?"10px":"0px"}}>
+            <div style={{ marginTop: this.activemobile ? "10px" : "30px" }}>
               <div className="centerRow row spaceImage">
                 {!this.activeCarousel && (
                   <>
@@ -278,7 +304,34 @@ class App extends Component {
                   </>
                 )}
                 {this.activeCarousel && (
-                  <Carousel slide={false} fade={false}>
+                  <Carousel
+                    slide={false}
+                    fade={false}
+                    nextIcon={
+                      <span>
+                        <i
+                          style={{
+                            color: "rgb(255 178 5)",
+                            fontSize: "2em",
+                            margin: "0 20px",
+                          }}
+                          className="fa fa-angle-right"
+                        ></i>
+                      </span>
+                    }
+                    prevIcon={
+                      <span>
+                        <i
+                          style={{
+                            color: "rgb(255 178 5)",
+                            fontSize: "2em",
+                            margin: "0 20px",
+                          }}
+                          className="fa fa-angle-left"
+                        ></i>
+                      </span>
+                    }
+                  >
                     <Carousel.Item>
                       <img src={iPhone123} />
                     </Carousel.Item>
@@ -297,7 +350,7 @@ class App extends Component {
                   </Carousel>
                 )}
               </div>
-              <div className="CustomT arrow marginCusomLG marginForTheLast row">
+              <div className="CustomT arrow marginCusomLG marginForTheLast row mt-4">
                 <div className="col-lg-4 col-md-6">
                   <div className="bottom-arrow text-xl-nowrap text-md-nowrap text-lg-nowrap text-sm-nowrap">
                     <p>
@@ -309,6 +362,7 @@ class App extends Component {
                       {!this.activemobile ? (
                         <>
                           <br></br>
+                          <br></br>
                         </>
                       ) : (
                         ""
@@ -317,15 +371,23 @@ class App extends Component {
                   </div>
                   <div className="CustomBoxLen row">
                     <img
+                      className="mr-2"
                       src={Vodafone}
                       style={{
                         width: this.activemobile ? "28px" : "40px",
                         height: "40px",
                       }}
                     />
-                    <p className="CustomLength customeLength">
-                      <b>Barbara Haiden</b>,<br />
-                      &nbsp;Innovation Manager &amp; Product Owner, Drei
+                    <p
+                      className="CustomLength customeLength"
+                      style={{ lineHeight: "15px" }}
+                    >
+                      <b>
+                        Barbara Haiden,
+                        <br />
+                      </b>
+                      Innovation Manager &amp; Product Owner, Drei
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -340,6 +402,7 @@ class App extends Component {
                       {!this.activemobile ? (
                         <>
                           <br></br>
+                          <br></br>
                         </>
                       ) : (
                         ""
@@ -348,6 +411,7 @@ class App extends Component {
                   </div>
                   <div className="CustomBoxLen row">
                     <img
+                      className="mr-2"
                       src={Vodafone}
                       style={{
                         width: this.activemobile ? "28px" : "40px",
@@ -377,39 +441,39 @@ class App extends Component {
                   <div className="CustomBoxLen row xo">
                     <img
                       src={whitecopy3}
+                      className="mr-2"
                       style={{
                         width: this.activemobile ? "21px" : "28px",
                         height: "40px",
                       }}
                     />
-                    <p style={{ lineHeight: "17px" }}>
-                      <b>Aviad Meshel</b>,<br />
-                      &nbsp;CEO, Keepers Child Safety
+                    <p style={{ lineHeight: "15px" }}>
+                      <b>
+                        Aviad Meshel,
+                        <br />
+                      </b>
+                      CEO, Keepers Child Safety <br />
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section>
-            <div
-              className="container"
-              style={{ marginTop: this.activemobile ? "40px" : "77px" }}
-            >
+          <section id="testApp">
+            <div style={{ marginTop: this.activemobile ? "40px" : "77px" }}>
               <div className="centerRow row">
                 <div style={{ maxWidth: "680px" }} className="col-md-9">
                   {this.activemobile ? (
                     <h5>
                       <b>
-                        WE ARE ASKING ALL DREI EMPLOYEES TO
-                        <br /> DOWNLOAD OUR NEW APP TODAY AND JOIN<br></br> OUR
-                        BETA TEST
+                        For all Drei employees with children aged 6-14:<br></br>{" "}
+                        INSTALL KEEPERS & JOIN OUR BETA-TEST!
                       </b>
                     </h5>
                   ) : (
                     <h3 className="mainCOnfig">
-                      WE ARE ASKING ALL DREI EMPLOYEES TO <br />
-                      <b>DOWNLOAD OUR NEW APP TODAY AND JOIN OUR BETA TEST</b>
+                      For all Drei employees with children aged 6-14:
+                      <br /> INSTALL KEEPERS & JOIN OUR BETA-TEST!
                     </h3>
                   )}
 
@@ -420,11 +484,9 @@ class App extends Component {
                       fontFamily: '"Barlow Semi Condensed", sans-serif',
                     }}
                   >
-                    Calling all Drei employees with children aged 6-14.
-                    <br />
-                    To participate in the Beta-Test, please follow this
-                    instruction:
-                    <br /> 1) Register for a free Trial Account
+                    To participate please follow the instructions:
+                    <br /> 1) Register for a{" "}
+                    <a href="#signUp">free Trial Account</a>
                     <br /> 2) Download the Keepers Child Safety App on your
                     device and follow the install-process.
                     <br /> 3) Once you have created a parent account, you will
@@ -446,12 +508,6 @@ class App extends Component {
                     />
                     <br />
                     <br />
-                    Once the app is downloaded on your device, please follow the
-                    sign up instructions. After creating an account on your
-                    device you will be asked to share the app with you child's
-                    device which will seamlessly link the accounts. Make sure to
-                    fill in your details in the box below for free access to
-                    your premium account!.
                   </p>
                   <small>
                     Note: You will see a payment screen for testing reasons,
@@ -462,86 +518,87 @@ class App extends Component {
             </div>
           </section>
           <section id="signUp">
-            <div className="container-fluid signUpImage">
-              <div className="centerRow row">
-                <div
-                  className="col-auto col-lg-4 col-md-4 col-md-5 col-sm-6 col-xl-3"
-                  style={{ marginTop: "70px", marginBottom: "79px" }}
+            {" "}
+            <div className="signUpImage centerRow row">
+              <div
+                className="col-auto col-lg-4 col-md-4 col-md-5 col-sm-6 col-xl-3"
+                style={{ marginTop: "70px", marginBottom: "79px" }}
+              >
+                <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
+                  SIGN UP NOW FOR A <br />
+                  FREE TRIAL ACCOUNT:
+                </h3>
+                <input
+                  type="text"
+                  className="form-control transparentButton"
+                  placeholder="Your Name"
+                  style={{ marginTop: "25px", maxWidth: "268px" }}
+                />
+                <input
+                  type="text"
+                  className="form-control transparentButton"
+                  placeholder="Email"
+                  style={{ marginTop: "25px", maxWidth: "268px" }}
+                />
+                <input
+                  type="text"
+                  className="form-control transparentButton"
+                  placeholder="Phone Number"
+                  style={{ marginTop: "25px", maxWidth: "268px" }}
+                />
+                <button
+                  type="button"
+                  className="btn"
+                  style={{
+                    marginTop: "18px",
+                    maxWidth: "268px",
+                    width: "100%",
+                    background: "#26b7c0",
+                    borderRadius: "7px",
+                    border: "3px solid #26b7c0",
+                  }}
                 >
-                  <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
-                    SIGN UP NOW FOR A <br />
-                    FREE TRIAL ACCOUNT:
-                  </h3>
+                  <span>
+                    <b>SIGN UP NOW</b>
+                  </span>
+                </button>
+
+                <div className="form-check m-2">
                   <input
-                    type="text"
-                    className="form-control transparentButton"
-                    placeholder="Your Name"
-                    style={{ marginTop: "25px", maxWidth: "268px" }}
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
-                  <input
-                    type="text"
-                    className="form-control transparentButton"
-                    placeholder="Email"
-                    style={{ marginTop: "25px", maxWidth: "268px" }}
-                  />
-                  <input
-                    type="text"
-                    className="form-control transparentButton"
-                    placeholder="Phone Number"
-                    style={{ marginTop: "25px", maxWidth: "268px" }}
-                  />
-                  <button
-                    type="button"
-                    className="btn"
-                    style={{
-                      marginTop: "18px",
-                      maxWidth: "268px",
-                      width: "100%",
-                      background: "#26b7c0",
-                      borderRadius: "7px",
-                      border: "3px solid #26b7c0",
-                    }}
+                  <label
+                    className="form-check-label"
+                    style={{ color: "white", fontSize: "0.58rem" }}
                   >
-                    <span>
-                      <b>SIGN UP NOW</b>
-                    </span>
-                  </button>
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label
-                      className="form-check-label"
-                      style={{ color: "white", fontSize: "0.58rem" }}
-                    >
-                      I agree to Keepers{" "}
-                      <a href="#">Privacy Terms & Conditions</a> and allow
-                      Keepers to contact me for marketing-related purposes.
-                    </label>
-                  </div>
+                    I agree to Keepers{" "}
+                    <a href="#">Privacy Terms & Conditions</a>
+                    <br></br> and allow Keepers to contact me for
+                    marketing-related purposes.
+                  </label>
                 </div>
               </div>
             </div>
           </section>
           <section>
-            <div className="container" style={{ marginTop: "64px" }}>
+            <div style={{ marginTop: "64px" }}>
               <div className="centerRow row" style={{ alignItems: "end" }}>
                 <div
-                  className="col-12 col-md-5 col-sm-8 col-xl-4 flexWoman"
-                  style={{ padding: "0px" }}
+                  className="col-12 col-md-5 col-sm-7 col-xl-4 flexWoman"
+                  style={{ padding: "0px", maxWidth: "300px" }}
                 >
                   <img
                     className="w-100"
                     src={woman}
                     alt=""
-                    style={{ height: "241px", maxWidth: "300px" }}
+                    style={{ height: "218px" }}
                   />{" "}
                 </div>
                 <div
-                  className="col-md-7 customHeight"
+                  className="col-md-8 col-sm-7 customHeight w-100"
                   style={{
                     background: "rgb(244,244,244)",
                     maxWidth: this.activemobile ? "300px" : "100%",
@@ -593,10 +650,9 @@ class App extends Component {
                 </div>
                 <div className="col-md-7 col-10">
                   <p>
-                    Suspicious text detection, auto-monitoring and reporting of
-                    any suspicious texts. Detect risky content from incoming /
-                    outgoing texts on social media (WhatsApp, Telegram, Viber,
-                    Instagram, Snapchat, Line, Kik, TikTok, Discord, Vkontakte).{" "}
+                    Detect suspicious incoming & outgoing text messages via
+                    WhatsApp, TikTok, Instagram, Snapchat, Telegram, Viber,
+                    Line, Kik, Discord or Vkontakte.{" "}
                   </p>
                 </div>
               </div>
@@ -652,83 +708,109 @@ class App extends Component {
                   </p>
                 </div>
               </div>
-              <div className="centerRow row" style={{ marginTop: "28px" }}>
-                <div className="col-md-1 col-2">
-                  <img src={confirm} className="imageSecSize" />
-                </div>
-                <div className="col-md-7 col-10">
-                  <p>
-                    Balance privacy Keepers is the only parental control app
-                    that prioritizes your kid’s privacy by only displaying
-                    specific messages that have been identified as potentially
-                    dangerous.
-                  </p>
-                </div>
+
+              <div className="centerRow " style={{ marginTop: "28px" }}>
+                <a
+                  type="button"
+                  className="btn btn-light"
+                  style={{
+                    maxWidth: this.activemobile ? "400px" : "268px",
+                    maxHeight: "63px",
+                    width: "100%",
+                    textAlign: "center",
+                    paddingBottom: "63px",
+                    paddingTop: "0px",
+                    backgroundColor: "#ffae3f",
+                    borderRadius: "9px",
+                    marginTop: "20px",
+                  }}
+                  href="#testApp"
+                >
+                  <span
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "center",
+                    }}
+                  >
+                    Join the Beta-Test
+                  </span>
+                  <br />
+                  <b>
+                    <span
+                      style={{
+                        fontFamily: "Barlow SemiBold",
+                        fontSize: "20px",
+                        textAlign: "center",
+                      }}
+                    >
+                      &nbsp;Sign Up Now
+                    </span>
+                  </b>
+                </a>
               </div>
             </div>
           </section>
           <section>
-            <div className="container-fluid signUpImage">
-              <div className="centerRow row">
-                <div
-                  className="col-auto col-lg-4 col-md-4 col-md-5 col-sm-6 col-xl-3"
-                  style={{ marginTop: "70px", marginBottom: "79px" }}
+            <div className="signUpImage centerRow row">
+              <div
+                className="col-auto col-lg-4 col-md-4 col-md-5 col-sm-6 col-xl-3"
+                style={{ marginTop: "70px", marginBottom: "79px" }}
+              >
+                <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
+                  SIGN UP NOW FOR A <br />
+                  FREE TRIAL ACCOUNT:
+                </h3>
+                <input
+                  type="text"
+                  className="form-control transparentButton"
+                  placeholder="Your Name"
+                  style={{ marginTop: "25px", maxWidth: "268px" }}
+                />
+                <input
+                  type="text"
+                  className="form-control transparentButton"
+                  placeholder="Email"
+                  style={{ marginTop: "25px", maxWidth: "268px" }}
+                />
+                <input
+                  type="text"
+                  className="form-control transparentButton"
+                  placeholder="Phone Number"
+                  style={{ marginTop: "25px", maxWidth: "268px" }}
+                />
+                <button
+                  type="button"
+                  className="btn"
+                  style={{
+                    marginTop: "18px",
+                    maxWidth: "268px",
+                    width: "100%",
+                    background: "#26b7c0",
+                    borderRadius: "7px",
+                    border: "3px solid #26b7c0",
+                  }}
                 >
-                  <h3 style={{ color: "#a9a9a9", fontSize: "1.5rem" }}>
-                    SIGN UP NOW FOR A <br />
-                    FREE TRIAL ACCOUNT:
-                  </h3>
-                  <input
-                    type="text"
-                    className="form-control transparentButton"
-                    placeholder="Your Name"
-                    style={{ marginTop: "25px", maxWidth: "268px" }}
-                  />
-                  <input
-                    type="text"
-                    className="form-control transparentButton"
-                    placeholder="Email"
-                    style={{ marginTop: "25px", maxWidth: "268px" }}
-                  />
-                  <input
-                    type="text"
-                    className="form-control transparentButton"
-                    placeholder="Phone Number"
-                    style={{ marginTop: "25px", maxWidth: "268px" }}
-                  />
-                  <button
-                    type="button"
-                    className="btn"
-                    style={{
-                      marginTop: "18px",
-                      maxWidth: "268px",
-                      width: "100%",
-                      background: "#26b7c0",
-                      borderRadius: "7px",
-                      border: "3px solid #26b7c0",
-                    }}
-                  >
-                    <span>
-                      <b>SIGN UP NOW</b>
-                    </span>
-                  </button>
+                  <span>
+                    <b>SIGN UP NOW</b>
+                  </span>
+                </button>
 
-                  <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label
-                      className="form-check-label"
-                      style={{ color: "white", fontSize: "0.58rem" }}
-                    >
-                      I agree to Keepers{" "}
-                      <a href="#">Privacy Terms & Conditions</a> and allow
-                      Keepers to contact me for marketing-related purposes.
-                    </label>
-                  </div>
+                <div className="form-check m-2">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    className="form-check-label"
+                    style={{ color: "white", fontSize: "0.58rem" }}
+                  >
+                    I agree to Keepers{" "}
+                    <a href="#">Privacy Terms & Conditions</a>
+                    <br></br> and allow Keepers to contact me for
+                    marketing-related purposes.
+                  </label>
                 </div>
               </div>
             </div>

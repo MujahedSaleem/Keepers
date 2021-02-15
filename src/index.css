@@ -193,12 +193,18 @@ body {
   .wearekeep {
     padding-top: 0px;
     height: 100%;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
-    max-width: 268px;
     max-height: 219px;
   }
 }
+.carousel-control-next {
+  right: -32px;
+}
+.carousel-control-prev {
+  left: -32px;
+}
+
 @media (max-width: 1200px) and (min-width: 764px) {
   .MainImageCustm {
     width: 100%;
@@ -246,7 +252,7 @@ body {
     font-size: 18px;
   }
   .customHeight {
-    height: 100px;
+    height: 30vh;
   }
   .fontCustom {
     font-size: 0.8rem;
