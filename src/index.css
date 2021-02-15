@@ -116,6 +116,40 @@ body {
 }
 
 @media (max-width: 575px) {
+  .customCont {
+    width: 10vw;
+  }
+
+  .marginForTheLast {
+    margin-top: 37px;
+  }
+  .CustomT {
+    padding: 0;
+  }
+  .fontCustom {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .sizePlus {
+    width: 15px;
+    height: 30px;
+    margin: 0 10px;
+  }
+
+  .mainCOnfig {
+    font-size: 17px;
+  }
+
+  .flexWoman {
+    justify-content: center;
+  }
+  .customeLength {
+    font-size: 13px;
+  }
+  .CustomBoxLen {
+    width: 17rem;
+    font-size: 14px;
+  }
   .p-0 {
     padding-left: 0;
   }
@@ -134,23 +168,6 @@ body {
   .customCont {
     width: 20vw;
   }
-}
-@media (max-width: 1200px) and (min-width: 764px) {
-  .MainImageCustm {
-    width: 100%;
-  }
-  .paddingMainText {
-    padding-top: 5em;
-  }
-  .fontscustom {
-    font-size: 1.5rem;
-  }
-  .wearekeep {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 575px) {
   .paddingMainText {
     padding-top: 0px;
     font-size: 18px;
@@ -170,12 +187,9 @@ body {
     height: 22px;
     margin-top: 5px;
   }
-  .imagePhone{
+  .imagePhone {
     width: 120px;
   }
-}
-
-@media (max-width: 575px) {
   .wearekeep {
     padding-top: 0px;
     height: 100%;
@@ -185,25 +199,21 @@ body {
     max-height: 219px;
   }
 }
-
-@media (max-width: 575px) {
-  .CustomBoxLen {
-    width: 17rem;
-    font-size: 14px;
+@media (max-width: 1200px) and (min-width: 764px) {
+  .MainImageCustm {
+    width: 100%;
+  }
+  .paddingMainText {
+    padding-top: 5em;
+  }
+  .fontscustom {
+    font-size: 1.5rem;
+  }
+  .wearekeep {
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 575px) {
-  .fontCustom {
-    font-size: 19px;
-    line-height: 24px;
-  }
-  .sizePlus {
-    width: 15px;
-    height: 30px;
-    margin: 0 10px;
-  }
-}
 @media (min-width: 992px) {
   .marginCusomLG {
     margin-top: 41px;
@@ -211,34 +221,6 @@ body {
 
   .CustomBoxLen {
     width: 106%;
-  }
-}
-
-@media (max-width: 575px) {
-  .customCont {
-    width: 10vw;
-  }
-
-  .marginForTheLast {
-    margin-top: 37px;
-  }
-  .CustomT {
-    padding: 0;
-  }
-}
-
-@media (max-width: 575px) {
-  .mainCOnfig {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 575px) {
-  .flexWoman {
-    justify-content: center;
-  }
-  .customeLength {
-    font-size: 13px;
   }
 }
 
